@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>math-pi-approximation.js</title>
 </head>
+
 <body>
     <div id="console_element"></div>
     <script>
@@ -15,10 +17,11 @@
         //console_log('Math.PI: ' + Math.PI);
         //console_log('Math.PI.toFixed(2): ' + Math.PI.toFixed(2));
         function console_log_replacement(...args) {
-            console_log(args.join(' '));  
+            console_log(args.join(' '));
         }
         console.log = console_log_replacement;
     </script>
     <script src="math-pi-approximation.js"></script>
 </body>
+
 </html>
