@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <h1>math-pi-approximation.js Output</h1>
+    <h2>Console Output:</h2>
     <div id="console_element"></div>
     <script>
         const console_element = document.getElementById('console_element');
@@ -22,6 +24,12 @@
         console.log = console_log_replacement;
     </script>
     <script src="math-pi-approximation.js"></script>
+    <h2>Source Code:</h2>
+    <pre><code id="code"></code></pre>
+    <script>
+        const url = 'math-pi-approximation.js';
+        fetch(url).then(res => res.text()).then(res => code.textContent = res);
+    </script>
 </body>
 
 </html>
