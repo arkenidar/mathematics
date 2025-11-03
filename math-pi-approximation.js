@@ -10,7 +10,9 @@ console.log("approximated π alias pi number:", circle_area/radius**2)
 */
 
 area_calc_1(10000) // slower, so less precision
+console.log("");
 area_calc_2(1000000000) // faster, so more precision
+console.log("");
 console.log("3.141592653589 is the best calculated so far")
 
 function area_calc_1(radius) {
