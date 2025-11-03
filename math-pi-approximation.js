@@ -9,6 +9,8 @@ var circle_area = 4*(sector_area-radius)
 console.log("approximated π alias pi number:", circle_area/radius**2)
 */
 
+var consout = consout ?? console.log // default assignment
+
 area_calc_1(10000) // slower, so less precision
 consout("");
 area_calc_2(1000000000) // faster, so more precision
